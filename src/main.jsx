@@ -2,10 +2,11 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { RouterProvider } from 'react-router-dom'
-import router from './routes/index.jsX'
+import router from './routes/index.jsx'
 import axios from 'axios'
 import { Provider } from 'react-redux'
 import { store } from './store/store'
+router
 
 
 axios.defaults.baseURL = 'https://api.themoviedb.org/3';
