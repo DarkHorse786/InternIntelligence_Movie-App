@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prebuild": "rm -rf node_modules && npm install",
-
+    "prebuild": "rm -rf node_modules && npm install"
   },
   
   "dependencies": {
