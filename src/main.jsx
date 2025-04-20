@@ -1,0 +1,25 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import { RouterProvider } from 'react-router-dom'
+import router from './routes/index.jsX'
+import axios from 'axios'
+import { Provider } from 'react-redux'
+import { store } from './store/store'
+
+
+axios.defaults.baseURL = 'https://api.themoviedb.org/3';
+axios.defaults.headers.common['Authorization'] = `Bearer ${import.meta.env.VITE_ACCESS_TOKEN}`;
+axios.defaults.params = {
+  api_key: '68e3537b5d4c5a0b6b48bc72addc842a',
+};
+
+
+createRoot(document.getElementById('root')).render(
+  
+  <StrictMode>
+    <Provider store={store}>
+      <RouterProvider router={router}/>
+    </Provider>
+  </StrictMode>
+)
