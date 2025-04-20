@@ -10,7 +10,7 @@ router
 
 
 axios.defaults.baseURL = 'https://api.themoviedb.org/3';
-axios.defaults.headers.common['Authorization'] = `Bearer ${import.meta.env.VITE_ACCESS_TOKEN}`;
+// axios.defaults.headers.common['Authorization'] = `Bearer ${import.meta.env.VITE_ACCESS_TOKEN}`;
 axios.defaults.params = {
   api_key: '68e3537b5d4c5a0b6b48bc72addc842a',
 };
